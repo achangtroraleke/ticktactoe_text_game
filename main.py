@@ -93,6 +93,11 @@ while not is_winner:
                      x_turn = False
               else:
                      print('That spot is already taken.')
+              is_winner = check_winner(board)
+              if is_winner:
+                     break
+
+
 
 
        if not x_turn:
@@ -139,5 +144,9 @@ while not is_winner:
 
                      print("That spot is already taken.")
 
-       is_winner = check_winner(board)
+              is_winner = check_winner(board)
+              if is_winner:
+                     break
+
+
 
